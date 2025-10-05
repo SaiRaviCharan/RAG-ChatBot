@@ -19,9 +19,7 @@ const nextConfig: NextConfig = {
     // Server actions configuration moved to experimental for Next.js 15
     serverActions: {
       bodySizeLimit: '10mb' // Increase limit for PDF uploads
-    },
-    // Enable optimized loading
-    optimizeCss: true
+    }
   },
   
   // Optimize webpack for better performance
