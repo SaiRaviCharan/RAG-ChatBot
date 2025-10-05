@@ -1,0 +1,117 @@
+/* Creator Footer Animations */
+
+@keyframes glare-move {
+  0% { 
+    transform: translateX(-100%) rotate(-45deg); 
+  }
+  100% { 
+    transform: translateX(200vw) rotate(-45deg); 
+  }
+}
+
+@keyframes glare-sweep {
+  0% { 
+    transform: translateX(-100%); 
+  }
+  100% { 
+    transform: translateX(100%); 
+  }
+}
+
+@keyframes gradient-x {
+  0%, 100% {
+    background-size: 200% 200%;
+    background-position: left center;
+  }
+  50% {
+    background-size: 200% 200%;
+    background-position: right center;
+  }
+}
+
+@keyframes float {
+  0%, 100% { 
+    transform: translateY(0px) rotate(0deg); 
+  }
+  50% { 
+    transform: translateY(-10px) rotate(180deg); 
+  }
+}
+
+@keyframes fade-in {
+  from { 
+    opacity: 0; 
+    transform: translateY(10px); 
+  }
+  to { 
+    opacity: 1; 
+    transform: translateY(0); 
+  }
+}
+
+/* Animation Classes */
+.animate-glare-move {
+  animation: glare-move 3s linear infinite;
+}
+
+.animate-glare-sweep {
+  animation: glare-sweep 1s ease-in-out;
+}
+
+.animate-gradient-x {
+  animation: gradient-x 3s ease infinite;
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+.animate-fade-in {
+  animation: fade-in 0.6s ease-out forwards;
+}
+
+.animation-delay-1000 {
+  animation-delay: 1s;
+}
+
+/* Particle animations */
+.particle {
+  width: 4px;
+  height: 4px;
+  background: white;
+  border-radius: 50%;
+  opacity: 0.2;
+  animation: float 3s ease-in-out infinite;
+}
+
+.particle:nth-child(odd) {
+  animation-duration: 4s;
+  animation-delay: 0.5s;
+}
+
+.particle:nth-child(even) {
+  animation-duration: 2.5s;
+  animation-delay: 1s;
+}
+
+/* Particle positioning */
+.particle[data-particle="0"] { left: 10%; top: 20%; }
+.particle[data-particle="1"] { left: 20%; top: 80%; }
+.particle[data-particle="2"] { left: 30%; top: 10%; }
+.particle[data-particle="3"] { left: 40%; top: 90%; }
+.particle[data-particle="4"] { left: 50%; top: 30%; }
+.particle[data-particle="5"] { left: 60%; top: 70%; }
+.particle[data-particle="6"] { left: 70%; top: 15%; }
+.particle[data-particle="7"] { left: 80%; top: 85%; }
+.particle[data-particle="8"] { left: 90%; top: 25%; }
+.particle[data-particle="9"] { left: 15%; top: 60%; }
+.particle[data-particle="10"] { left: 25%; top: 40%; }
+.particle[data-particle="11"] { left: 35%; top: 75%; }
+.particle[data-particle="12"] { left: 45%; top: 5%; }
+.particle[data-particle="13"] { left: 55%; top: 95%; }
+.particle[data-particle="14"] { left: 65%; top: 35%; }
+.particle[data-particle="15"] { left: 75%; top: 65%; }
+.particle[data-particle="16"] { left: 85%; top: 45%; }
+.particle[data-particle="17"] { left: 95%; top: 55%; }
+.particle[data-particle="18"] { left: 5%; top: 50%; }
+.particle[data-particle="19"] { left: 12%; top: 88%; }

@@ -1,0 +1,25 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://your-domain.com/sitemap.xml
+
+# Crawl-delay
+Crawl-delay: 1
+
+# Specific rules for different bots
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+# Block sensitive areas (if any)
+Disallow: /api/
+Disallow: /_next/
+Disallow: /admin*
+
+# Allow important pages
+Allow: /
+Allow: /upload
+Allow: /chat
