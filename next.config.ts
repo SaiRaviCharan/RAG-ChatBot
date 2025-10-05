@@ -9,6 +9,9 @@ const nextConfig: NextConfig = {
     resolveAlias: {
       // Optimize imports to reduce bundle size
       'react-dom/server': 'react-dom/server.browser'
+    },
+    rules: {
+      '*.svg': ['@svgr/webpack'],
     }
   },
   
@@ -18,13 +21,7 @@ const nextConfig: NextConfig = {
       bodySizeLimit: '10mb' // Increase limit for PDF uploads
     },
     // Enable optimized loading
-    optimizeCss: true,
-    // Enable turbo mode for faster builds
-    turbo: {
-      rules: {
-        '*.svg': ['@svgr/webpack'],
-      },
-    }
+    optimizeCss: true
   },
   
   // Optimize webpack for better performance
