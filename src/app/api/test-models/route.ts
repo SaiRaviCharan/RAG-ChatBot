@@ -22,7 +22,7 @@ export async function GET() {
       message: 'Try these model names in your chat route',
       modelNames 
     })
-  } catch (error) {
+  } catch (error: any) {
     return Response.json({ error: error.message }, { status: 500 })
   }
 }
